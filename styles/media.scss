@@ -87,9 +87,34 @@
     .navbar__wrap {
 
         &::after {
-            left: -24.5rem;
+            left: -25.5rem;
         }
 
+    }
+}
+
+@media (max-width:1100px) and (min-width: 1024px) {
+    header.header {
+        .header {
+            &-contact {
+                justify-content: flex-end;
+
+                .phone {
+                    align-self: flex-end !important;
+                    margin-right: 0 !important;
+                    flex-basis: 100%;
+
+                    a {
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .calculator {
+        padding-top: 0rem;
     }
 }
 

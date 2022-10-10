@@ -646,7 +646,7 @@ main {
     }
 
     &__content {
-      padding: 5.25rem 0 6.25rem 0;
+      padding: 4.75rem 0 6.25rem 0;
 
       .title {
         max-width: 49.25rem;
@@ -2514,6 +2514,7 @@ main {
     border-radius: 10px;
     padding: 59px 35px 87px 40px;
     position: relative;
+    z-index: 0;
 
     &::after {
       content: '';
@@ -2523,6 +2524,7 @@ main {
       position: absolute;
       top: 0;
       right: 0;
+      z-index: -1;
     }
 
     button.btn {
@@ -2896,8 +2898,7 @@ main {
 
 header {
   &.header {
-    margin-bottom: 25px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 70px;
 
     .header-contact {
       @include d-flex();
@@ -2942,6 +2943,8 @@ header {
   background-color: #fff;
   z-index: 1;
   overflow-y: hidden;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar__wrap {
@@ -3008,6 +3011,12 @@ header {
 
 /*Breadcrumbs*/
 .breadcrumbs {
+  margin-bottom: 42px;
+
+  @include ma(tablet) {
+    margin-top: 1rem;
+  }
+
   &>span {
     position: relative;
     font-size: 14px;
@@ -3048,6 +3057,63 @@ header {
 .blog-page {
   display: grid;
   grid-template-columns: auto 270px;
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 2.65rem;
+    color: #48545E;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 21px;
+  }
+
+  ul {
+
+    li {
+      margin-bottom: 35px;
+      color: #48545E;
+      position: relative;
+      padding-left: 10px;
+
+      &::after {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: #00AE9A;
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 0;
+      }
+    }
+  }
+
+  &__content {
+    .mb-54 {
+      margin-bottom: 3.37rem;
+    }
+
+
+    &>h2 {
+      font-size: 40px;
+      line-height: 54px;
+
+      @include _768 {
+        font-size: 24px;
+        line-height: 33px;
+      }
+    }
+
+
+    .d-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 
   .join-us {
     &__text-box {
