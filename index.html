@@ -1,0 +1,3208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>title</title>
+    <link rel="shortcut icon" href="#" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header class="header">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar__wrap">
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <a href="/" class="logo" id="logo">
+                <picture>
+                  <source
+                    srcset="./media/images/icons/logo.png"
+                    media="(min-width: 1025px)"
+                  />
+                  <img src="./media/images/logo-m.png" alt="logo" />
+                </picture>
+              </a>
+              <ul class="menu" id="menu">
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Клиентам</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <div class="header-contact">
+                <div class="phone">
+                  с 9 до 18 без выходных
+                  <a href="tel:+88005514576">8(800) 551-45-76</a>
+                </div>
+                <button class="btn btn--size-sm">Узнать стоимость</button>
+                <button class="btn btn--size-sm btn--style-outlined">
+                  вход
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup"></div>
+      </header>
+      <main class="main">
+        <section class="help-write">
+          <img
+            src="./media/images/bg-help-write.svg"
+            alt="we go background"
+            width="1920"
+            height="789"
+            class="help__bg"
+          />
+          <img
+            src="./media/images/help-face1.png"
+            alt="face"
+            width="671"
+            height="529"
+            class="face-img"
+          />
+          <div class="container">
+            <div class="help-write__content">
+              <h1 class="title">
+                Помощь в написании курсовых, дипломных, контрольных и других
+                работ<span> от 40 ХЗ/стр</span>
+              </h1>
+              <p class="subtitle">
+                План, презентация, речь, отчет об уникальности и правки -
+                <b>бесплатно!</b>
+              </p>
+              <p class="two-subtitle">
+                Укажите свой "дедлайн" - - беремся только за те работы, которые
+                гарантированно сделаем вовремя
+              </p>
+              <ul class="items-lists">
+                <li>
+                  <img
+                    src="./media/images/icons/need.png"
+                    alt="need"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="list-content">
+                    <h5>То что надо!</h5>
+                    <p>
+                      После написания, все работы проверяются на соответствие
+                      требованиям вашего ВУЗа, ГОСТам и нормам Антиплагиата
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="./media/images/icons/time.png"
+                    alt="time"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="list-content">
+                    <h5>Точно в срок!</h5>
+                    <p>
+                      Выполнение срочных работ - от 1 дня. Полная оплата после
+                      ознакомления с частью работы. Предоплата всего 30%.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img
+                    src="./media/images/icons/armor.png"
+                    alt="armor"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="list-content">
+                    <h5>С гарантией!</h5>
+                    <p>
+                      Вернем деньги, если работа не соответствует изначальному
+                      заданию (теме, требованиям ВУЗа, оригинальности и.т.д.)
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <button class="btn">Узнать стоимость</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="calculator">
+          <img
+            src="./media/images/bg-calculator.svg"
+            alt="bg-calculator"
+            width="1920"
+            height="789"
+            class="calculator__bg"
+          />
+
+          <div class="container">
+            <div class="calculator__content">
+              <h2 class="section-heading section-heading--decor-left">
+                Узнайте точную стоимость
+              </h2>
+              <p class="subtitle">
+                Или закажите
+                <b>бесплатный план</b>
+              </p>
+              <div class="calculator-form">
+                <div class="form">
+                  <form action="">
+                    <div class="d-grid">
+                      <div class="type-work">
+                        <label for="t-work">Тип работы</label>
+                        <select name="t-work" id="t-work" class="t-work">
+                          <option></option>
+                          <option value="1">Бесплатный план (курсовая)</option>
+                          <option value="2">Бесплатный план (диплом)</option>
+                          <option value="3">Курсовая работа</option>
+                          <option value="4">Реферат</option>
+                          <option value="5">Дипломная работа</option>
+                          <option value="6">
+                            Дипломная работа (один раздел)
+                          </option>
+                          <option value="7">Дипломная работа (правки)</option>
+                          <option value="8">Магистерская работа</option>
+                          <option value="9">
+                            Магистерская работа (один раздел)
+                          </option>
+                          <option value="10">
+                            Магистерская работа (правки)
+                          </option>
+                          <option value="11">Автореферат</option>
+                          <option value="12">Аннотация</option>
+                          <option value="13">Аспирантский реферат</option>
+                          <option value="14">Бизнес-план</option>
+                          <option value="15">Диссертация</option>
+                          <option value="16">Дневник по практике</option>
+                          <option value="17">Домашняя работа</option>
+                          <option value="18">Задача</option>
+                          <option value="19">Кейс</option>
+                          <option value="20">Контрольная работа</option>
+                          <option value="21">Копирайтинг</option>
+                          <option value="22">Лабораторная работа</option>
+                          <option value="23">Монография</option>
+                          <option value="24">Мотивационное письмо</option>
+                          <option value="25">Научная статья</option>
+                          <option value="26">
+                            Научно-исследовательская работа
+                          </option>
+                          <option value="27">Ответы на билеты</option>
+                          <option value="28">Отчет по практике</option>
+                          <option value="29">Перевод</option>
+                          <option value="30">Повышение уникальности</option>
+                          <option value="31">Практическая работа</option>
+                          <option value="32">Презентация PowerPoint</option>
+                          <option value="33">Рецензия (только текст)</option>
+                          <option value="34">
+                            Составление плана диссертации
+                          </option>
+                          <option value="35">Сочинение</option>
+                          <option value="36">Статьи для диссертации</option>
+                          <option value="37">Статья</option>
+                          <option value="38">Творческая работа</option>
+                          <option value="39">Тезисы</option>
+                          <option value="40">Тест</option>
+                          <option value="41">Чертеж</option>
+                          <option value="42">Эссе</option>
+                        </select>
+                      </div>
+                      <div class="type-subject">
+                        <label for="t-subject">Предмет</label>
+                        <select
+                          name="t-subject"
+                          id="t-subject"
+                          class="t-subject"
+                        >
+                          <option></option>
+                          <option value="1">Менеджмент</option>
+                          <option value="2">Маркетинг</option>
+                          <option value="3">Ресторанный бизнес</option>
+                          <option value="4">Туризм</option>
+                          <option value="5">Право</option>
+                          <option value="6">Педагогика</option>
+                          <option value="7">Филология</option>
+                          <option value="8">Английский</option>
+                          <option value="9">Компьютерные сети и системы</option>
+                          <option value="10">Базы данных</option>
+                          <option value="11">Экономика</option>
+                          <option value="12">Макроэкономика</option>
+                          <option value="13">Микроэкономика</option>
+                          <option value="14">Бухгалтерский учет и аудит</option>
+                          <option value="15">1 : C</option>
+                          <option value="16">1 с</option>
+                          <option value="17">3D-max</option>
+                          <option value="18">Access</option>
+                          <option value="19">Android</option>
+                          <option value="20">Basic</option>
+                          <option value="21">BPWin</option>
+                          <option value="22">C/C++</option>
+                          <option value="23">C#</option>
+                          <option value="24">CorelDraw</option>
+                          <option value="25">Delphi</option>
+                          <option value="26">Electronics Workbench</option>
+                          <option value="27">Excel</option>
+                          <option value="28">Fortran</option>
+                          <option value="29">HTML</option>
+                          <option value="30">Java</option>
+                          <option value="31">Javascript</option>
+                          <option value="32">Linux</option>
+                          <option value="33">MathCad</option>
+                          <option value="34">MATLAB</option>
+                          <option value="35">MySQL</option>
+                          <option value="36">Pascal</option>
+                          <option value="37">Perl</option>
+                          <option value="38">Photoshop</option>
+                          <option value="39">PHP</option>
+                          <option value="40">PowerPoint презентация</option>
+                          <option value="41">Prolog</option>
+                          <option value="42">SPSS</option>
+                          <option value="43">Visual Basic</option>
+                          <option value="44">Visual C++</option>
+                          <option value="45">web - разработки</option>
+                          <option value="46">Авиационная промышленность</option>
+                          <option value="47">
+                            Автомобильная промышленность
+                          </option>
+                          <option value="48">Агрономия</option>
+                          <option value="49">Агрофизика</option>
+                          <option value="50">Агрохимия</option>
+                          <option value="51">Административное право</option>
+                          <option value="52">Акустика</option>
+                          <option value="53">Алгебра</option>
+                          <option value="54">Анализ текста</option>
+                          <option value="55">Анализ хоз. деятельности</option>
+                          <option value="56">Аналитическая химия</option>
+                          <option value="57">Анатомия</option>
+                          <option value="58">Антенны и устройства СВЧ</option>
+                          <option value="59">Антикризисное управление</option>
+                          <option value="60">Античная философия</option>
+                          <option value="61">Арабский</option>
+                          <option value="62">Арбитражный процесс</option>
+                          <option value="63">Археология</option>
+                          <option value="64">Архитектура</option>
+                          <option value="65">Ассемблер</option>
+                          <option value="66">Астрометрия</option>
+                          <option value="67">Астрономия</option>
+                          <option value="68">Астрофизика</option>
+                          <option value="69">АСУ</option>
+                          <option value="70">Аудит</option>
+                          <option value="71">АФХД</option>
+                          <option value="72">Банковское дело</option>
+                          <option value="73">Белорусский</option>
+                          <option value="74">БЖ</option>
+                          <option value="75">БЖД в строительстве</option>
+                          <option value="76">Библиотековедение</option>
+                          <option value="77">Бизнес-планирование</option>
+                          <option value="78">Биогеография</option>
+                          <option value="79">Биология</option>
+                          <option value="80">Биофизика</option>
+                          <option value="81">Биохимия</option>
+                          <option value="82">Биржевое дело</option>
+                          <option value="83">Ботаника</option>
+                          <option value="84">
+                            Бухгалтерская и налоговая отчетность
+                          </option>
+                          <option value="85">Бюджетирование</option>
+                          <option value="86">Валеология</option>
+                          <option value="87">Валютные отношения</option>
+                          <option value="88">Ветеринария</option>
+                          <option value="89">Вибрационные процессы</option>
+                          <option value="90">Виртуальная психология</option>
+                          <option value="91">
+                            Водоснабжение и водоотведение
+                          </option>
+                          <option value="92">Востоковедение</option>
+                          <option value="93">Высшая геодезия</option>
+                          <option value="94">Высшая математика</option>
+                          <option value="95">Вычислительная математика</option>
+                          <option value="96">Вычислительная механика</option>
+                          <option value="97">
+                            ВЭД – внешнеэкономическая деятельность
+                          </option>
+                          <option value="98">Гендерная психология</option>
+                          <option value="99">Гендерная социология</option>
+                          <option value="100">Генетика</option>
+                          <option value="101">География</option>
+                          <option value="102">Геодезия</option>
+                          <option value="103">Геология</option>
+                          <option value="104">
+                            Геология полезных ископаемых
+                          </option>
+                          <option value="105">Геометрия</option>
+                          <option value="106">Геополитика</option>
+                          <option value="107">Геофизика</option>
+                          <option value="108">Геохимия</option>
+                          <option value="109">Геоэкология</option>
+                          <option value="110">Гигиена</option>
+                          <option value="111">Гидравлика</option>
+                          <option value="112">
+                            Гидромелиоративное строительство
+                          </option>
+                          <option value="113">
+                            Гидротехническое строительство
+                          </option>
+                          <option value="114">Голландский</option>
+                          <option value="115">Гостиничное дело</option>
+                          <option value="116">
+                            Государственное управление
+                          </option>
+                          <option value="117">Государство и право</option>
+                          <option value="118">Гражданское право</option>
+                          <option value="119">Греческий</option>
+                          <option value="120">Грибы и микология</option>
+                          <option value="121">Датский</option>
+                          <option value="122">
+                            Декоративно-прикладное искусство
+                          </option>
+                          <option value="123">Делопроизводство</option>
+                          <option value="124">>Деньги и кредит</option>
+                          <option value="125">Деревообработка</option>
+                          <option value="126">Детали машин</option>
+                          <option value="127">Диалектология</option>
+                          <option value="128">Дидактика</option>
+                          <option value="129">Дизайн интерьера</option>
+                          <option value="130">Дискретная математика</option>
+                          <option value="131">
+                            Дифференциальная геометрия
+                          </option>
+                          <option value="132">
+                            Дифференциальная психология
+                          </option>
+                          <option value="133">
+                            Дифференциальные уравнения
+                          </option>
+                          <option value="134">Добывающее производство</option>
+                          <option value="135">Дорожное строительство</option>
+                          <option value="136">Дошкольная педагогика</option>
+                          <option value="137">Естествознание</option>
+                          <option value="138">
+                            Железнодорожное машиностроение
+                          </option>
+                          <option value="139">Жилищное право</option>
+                          <option value="140">Журналистика</option>
+                          <option value="141">Земельное право</option>
+                          <option value="142">Земельные кадастры</option>
+                          <option value="143">Зоология</option>
+                          <option value="144">Зоотехния</option>
+                          <option value="145">Иврит</option>
+                          <option value="146">
+                            Издательское дело и полиграфия
+                          </option>
+                          <option value="147">Иммунология</option>
+                          <option value="148">Инвестиции</option>
+                          <option value="149">Инвестиционный менеджмент</option>
+                          <option value="150">Инженерная геодезия</option>
+                          <option value="151">Инженерная геология</option>
+                          <option value="152">Инженерная графика</option>
+                          <option value="153">Инженерная психология</option>
+                          <option value="154">Инновационный менеджмент</option>
+                          <option value="155">
+                            Инструментальная промышленность
+                          </option>
+                          <option value="156">Интернет маркетинг</option>
+                          <option value="157">Информатика</option>
+                          <option value="158">
+                            Информационная безопасность
+                          </option>
+                          <option value="159">Информационные системы</option>
+                          <option value="160">
+                            Информационные системы в экономике
+                          </option>
+                          <option value="161">Информационные технологии</option>
+                          <option value="162">Искусственный интеллект</option>
+                          <option value="163">Искусство и культура</option>
+                          <option value="164">Искусствоведение</option>
+                          <option value="165">Испанский</option>
+                          <option value="166">Исследование операций</option>
+                          <option value="167">Историческая география</option>
+                          <option value="168">История</option>
+                          <option value="169">История архитектуры</option>
+                          <option value="170">История балета</option>
+                          <option value="171">
+                            История государства и права
+                          </option>
+                          <option value="172">История Древняя</option>
+                          <option value="173">История журналистики</option>
+                          <option value="174">История Зарубежная</option>
+                          <option value="175">
+                            История зарубежного искусства
+                          </option>
+                          <option value="176">История искусств</option>
+                          <option value="177">История культуры</option>
+                          <option value="178">История Мировая</option>
+                          <option value="179">История МЭО</option>
+                          <option value="180">История Отечества</option>
+                          <option value="181">История педагогики</option>
+                          <option value="182">
+                            История развивающихся стран
+                          </option>
+                          <option value="183">
+                            История развития политических учений
+                          </option>
+                          <option value="184">История рекламы</option>
+                          <option value="185">История религии</option>
+                          <option value="186">История Средних веков</option>
+                          <option value="187">
+                            История экономической мысли
+                          </option>
+                          <option value="188">Итальянский</option>
+                          <option value="189">Казахский</option>
+                          <option value="190">Квантовая механика</option>
+                          <option value="191">Квантовая физика</option>
+                          <option value="192">Квантовая химия</option>
+                          <option value="193">Кино и телевидение</option>
+                          <option value="194">Китайский</option>
+                          <option value="195">Классическая механика</option>
+                          <option value="196">Клиническая психология</option>
+                          <option value="197">Когнитивная психология</option>
+                          <option value="198">Коллоидная химия</option>
+                          <option value="199">Коммерция</option>
+                          <option value="200">Компьютерная графика</option>
+                          <option value="201">Конституционное право</option>
+                          <option value="202">Конфликтология</option>
+                          <option value="203">Корпоративное право</option>
+                          <option value="204">Краеведение</option>
+                          <option value="205">Криминалистика</option>
+                          <option value="206">Криминология</option>
+                          <option value="207">Криптография</option>
+                          <option value="208">
+                            Культурно-досуговая деятельность
+                          </option>
+                          <option value="209">Культурология</option>
+                          <option value="210">Ландшафтный дизайн</option>
+                          <option value="211">Латинский</option>
+                          <option value="212">Легкая промышленность</option>
+                          <option value="213">Лексикология</option>
+                          <option value="214">Лесное хозяйство</option>
+                          <option value="215">
+                            Лесопромышленное машиностроение
+                          </option>
+                          <option value="216">Лингвистика</option>
+                          <option value="217">Лингвистика текста</option>
+                          <option value="218">Линейная алгебра</option>
+                          <option value="219">Линейное программирование</option>
+                          <option value="220">Литература зарубежная</option>
+                          <option value="221">Литература украинская</option>
+                          <option value="222">Литературоведение</option>
+                          <option value="223">Логика</option>
+                          <option value="224">Логика гуманитарная</option>
+                          <option value="225">Логистика</option>
+                          <option value="226">Логопедия</option>
+                          <option value="227">Маркетинг закупок</option>
+                          <option value="228">Маркетинг продаж</option>
+                          <option value="229">Маркшейдерское дело</option>
+                          <option value="230">Масс-медиа</option>
+                          <option value="231">Мат. мет. в экономике</option>
+                          <option value="232">Мат. методы в психологии</option>
+                          <option value="233">Математическая логика</option>
+                          <option value="234">Математическая статистика</option>
+                          <option value="235">Математическая физика</option>
+                          <option value="236">Математическая химия</option>
+                          <option value="237">Математические методы</option>
+                          <option value="238">
+                            Математические методы в социологии
+                          </option>
+                          <option value="239">
+                            Математические методы в экономике
+                          </option>
+                          <option value="240">Математический анализ</option>
+                          <option value="241">
+                            Математическое моделирование
+                          </option>
+                          <option value="242">Материаловедение</option>
+                          <option value="243">
+                            Материаловедение легкой промышленности
+                          </option>
+                          <option value="244">Матпро</option>
+                          <option value="245">Медицина</option>
+                          <option value="246">Медицинская психология</option>
+                          <option value="247">Международное право</option>
+                          <option value="248">Международные отношения</option>
+                          <option value="249">Международный маркетинг</option>
+                          <option value="250">Международный менеджмент</option>
+                          <option value="251">Менеджмент организации</option>
+                          <option value="252">
+                            Менеджмент социально-культурной сферы
+                          </option>
+                          <option value="253">Металлообработка</option>
+                          <option value="254">
+                            Металлургия цветных металлов
+                          </option>
+                          <option value="255">Метафизика (онтология)</option>
+                          <option value="256">Методика преподавания</option>
+                          <option value="257">
+                            Методика преподавания английского языка
+                          </option>
+                          <option value="258">
+                            Методика преподавания техн. дисциплин
+                          </option>
+                          <option value="259">
+                            Методика преподавания эконом. дисциплин
+                          </option>
+                          <option value="260">Метрология</option>
+                          <option value="261">Механизация строительства</option>
+                          <option value="262">Механика</option>
+                          <option value="263">Механика сплошных сред</option>
+                          <option value="264">Микробиология</option>
+                          <option value="265">Микроструктурная геология</option>
+                          <option value="266">Микроэлектроника</option>
+                          <option value="267">Мировая культура моды</option>
+                          <option value="268">
+                            Мировая Художественная Культура
+                          </option>
+                          <option value="269">Мировая экономика</option>
+                          <option value="270">
+                            Моделирование в металлургии
+                          </option>
+                          <option value="271">МСФО</option>
+                          <option value="272">Музыка</option>
+                          <option value="273">Муниципальное право</option>
+                          <option value="274">Муниципальное управление</option>
+                          <option value="275">МЭО</option>
+                          <option value="276">Налоги</option>
+                          <option value="277">Налоговое право</option>
+                          <option value="278">Народное искусство</option>
+                          <option value="279">Наследственная механика</option>
+                          <option value="280">Начертательная геометрия</option>
+                          <option value="281">Небесная механика</option>
+                          <option value="282">Неголономная механика</option>
+                          <option value="283">Нейропсихология</option>
+                          <option value="284">Нелинейная динамика</option>
+                          <option value="285">Немецкий</option>
+                          <option value="286">Неорганическая химия</option>
+                          <option value="287">
+                            Нефтегазовое машиностроение
+                          </option>
+                          <option value="288">
+                            Оборудование легкой промышленности
+                          </option>
+                          <option value="289">
+                            Оборудование пищевой промышленности
+                          </option>
+                          <option value="290">
+                            Обрабатывающее производство
+                          </option>
+                          <option value="291">Общая психология</option>
+                          <option value="292">Общественная мысль</option>
+                          <option value="293">
+                            ОВД – органы внутренних дел
+                          </option>
+                          <option value="294">ООП</option>
+                          <option value="295">Оптика</option>
+                          <option value="296">
+                            Организация общественного питания
+                          </option>
+                          <option value="297">
+                            Организация производства и труда
+                          </option>
+                          <option value="298">Организация ЭВМ</option>
+                          <option value="299">Органическая химия</option>
+                          <option value="300">Ортопедия</option>
+                          <option value="301">Основы программирования</option>
+                          <option value="302">
+                            Основы теории сварки и резки металлов
+                          </option>
+                          <option value="303">ОТЦ</option>
+                          <option value="304">Охрана среды</option>
+                          <option value="305">
+                            Охрана труда и техника безопасности
+                          </option>
+                          <option value="306">Оценка стоимости земли</option>
+                          <option value="307">
+                            Оценка стоимости недвижимости
+                          </option>
+                          <option value="308">Палеонтология</option>
+                          <option value="309">Парикмахерское дело</option>
+                          <option value="310">Патология</option>
+                          <option value="311">Патопсихология</option>
+                          <option value="312">ПГС</option>
+                          <option value="313">Педагогическая инноватика</option>
+                          <option value="314">Педагогическая психология</option>
+                          <option value="315">
+                            Планирование и прогнозирование
+                          </option>
+                          <option value="316">
+                            Подъёмно-транспортные машины
+                          </option>
+                          <option value="317">Политическая география</option>
+                          <option value="318">
+                            Политическая культура/поведение
+                          </option>
+                          <option value="319">Политические институты</option>
+                          <option value="320">Политическое право</option>
+                          <option value="321">Политология</option>
+                          <option value="322">Польский</option>
+                          <option value="323">Португальский</option>
+                          <option value="324">
+                            Право интелектуальной собственности
+                          </option>
+                          <option value="325">
+                            Право социального обеспечения
+                          </option>
+                          <option value="326">Правовая статистика</option>
+                          <option value="327">Практическая гидравлика</option>
+                          <option value="328">Предпринимательство</option>
+                          <option value="329">Приборостроение</option>
+                          <option value="330">Прикладная лингвистика</option>
+                          <option value="331">Прикладная математика</option>
+                          <option value="332">Прикладная механика</option>
+                          <option value="333">Прикладная психология</option>
+                          <option value="334">
+                            Проектирование систем вентиляции, отопле
+                          </option>
+                          <option value="335">
+                            Проектно-сметная документация
+                          </option>
+                          <option value="336">
+                            Производственные технологии
+                          </option>
+                          <option value="337">
+                            Производство металлических изделий и заг
+                          </option>
+                          <option value="338">
+                            Производство технологического оборудован
+                          </option>
+                          <option value="339">Прокурорский надзор</option>
+                          <option value="340">Промышленное рыбоводство</option>
+                          <option value="341">
+                            Промышленность бытовых приборов и машин
+                          </option>
+                          <option value="342">Профессиональная этика</option>
+                          <option value="343">Психоанализ</option>
+                          <option value="344">Психодиагностика</option>
+                          <option value="345">Психолингвистика</option>
+                          <option value="346">Психология</option>
+                          <option value="347">Психология восприятия</option>
+                          <option value="348">Психология здоровья</option>
+                          <option value="349">Психология личности</option>
+                          <option value="350">Психология развития</option>
+                          <option value="351">Психология спорта</option>
+                          <option value="352">Психология труда</option>
+                          <option value="353">Психопатология</option>
+                          <option value="354">Психосоматика</option>
+                          <option value="355">Психотерапия</option>
+                          <option value="356">Психофизиология</option>
+                          <option value="357">
+                            Радиотехническая и электронная промышлен
+                          </option>
+                          <option value="358">Радиофизика</option>
+                          <option value="359">Радиоэлектроника</option>
+                          <option value="360">
+                            Ракетно-космическая отрасль
+                          </option>
+                          <option value="361">Реклама и PR</option>
+                          <option value="362">Религия и мифология</option>
+                          <option value="363">Релятивистская механика</option>
+                          <option value="364">Римское право</option>
+                          <option value="365">Риторика</option>
+                          <option value="366">Робототехника</option>
+                          <option value="367">Русский язык</option>
+                          <option value="368">Рынок ценных бумаг</option>
+                          <option value="369">Связи с общественностью</option>
+                          <option value="370">Сельское хозяйство</option>
+                          <option value="371">
+                            Сельскохозяйственное машиностроение
+                          </option>
+                          <option value="372">Семейное право</option>
+                          <option value="373">Сестринское дело</option>
+                          <option value="374">
+                            СКД (социально-культурная деятельность
+                          </option>
+                          <option value="375">Складская логистика</option>
+                          <option value="376">Сопротивление материалов</option>
+                          <option value="377">Социальная антропология</option>
+                          <option value="378">Социальная педагогика</option>
+                          <option value="379">Социальная психология</option>
+                          <option value="380">Социальная работа</option>
+                          <option value="381">Социальная статистика</option>
+                          <option value="382">
+                            Социально – экономическая география
+                          </option>
+                          <option value="383">
+                            Социально-культурное проектирование
+                          </option>
+                          <option value="384">Социолингвистика</option>
+                          <option value="385">Социология</option>
+                          <option value="386">Социология знаний</option>
+                          <option value="387">Социология коммуникаций</option>
+                          <option value="388">Социология культуры</option>
+                          <option value="389">Социология личности</option>
+                          <option value="390">Социология молодежи</option>
+                          <option value="391">Социология образования</option>
+                          <option value="392">Социология организаций</option>
+                          <option value="393">Социология политики</option>
+                          <option value="394">Социология права</option>
+                          <option value="395">Социология религии</option>
+                          <option value="396">Социология риска</option>
+                          <option value="397">Социология села</option>
+                          <option value="398">Социология семьи</option>
+                          <option value="399">Социология СМИ</option>
+                          <option value="400">Социология труда</option>
+                          <option value="401">
+                            Специальная педагогика (дефектология)
+                          </option>
+                          <option value="402">Специальная подготовка</option>
+                          <option value="403">Специальная психология</option>
+                          <option value="404">Сравнительная педагогика</option>
+                          <option value="405">Сравнительная психология</option>
+                          <option value="406">
+                            Стандартизация и сертификация
+                          </option>
+                          <option value="407">Станкостроение</option>
+                          <option value="408">Статистика</option>
+                          <option value="409">Статистическая механика</option>
+                          <option value="410">Статистическая физика</option>
+                          <option value="411">Стилистика</option>
+                          <option value="412">Стратегический маркетинг</option>
+                          <option value="413">Стратегический менеджмент</option>
+                          <option value="414">Страхование</option>
+                          <option value="415">Страховая математика</option>
+                          <option value="416">Строительная механика</option>
+                          <option value="417">
+                            Строительное и коммунальное машиностроен
+                          </option>
+                          <option value="418">Строительство</option>
+                          <option value="419">Судебная бухгалтерия</option>
+                          <option value="420">Судебная экспертиза</option>
+                          <option value="421">Судостроение</option>
+                          <option value="422">Сурдопедагогика</option>
+                          <option value="423">Схемотехника</option>
+                          <option value="424">Схемы и чертежи в Visio</option>
+                          <option value="425">Таможенная система</option>
+                          <option value="426">Таможенное право</option>
+                          <option value="427">ТАУ</option>
+                          <option value="428">
+                            ТВиМС (теория вероятностей и мат. статис
+                          </option>
+                          <option value="429">Театр</option>
+                          <option value="430">Телекоммуникации</option>
+                          <option value="431">Теоретическая механика</option>
+                          <option value="432">
+                            Теоретические основы гидравлики
+                          </option>
+                          <option value="433">Теория алгоритмов</option>
+                          <option value="434">Теория воспитания</option>
+                          <option value="435">
+                            Теория государства и права
+                          </option>
+                          <option value="436">Теория графов</option>
+                          <option value="437">Теория игр</option>
+                          <option value="438">Теория информации</option>
+                          <option value="439">Теория колебаний</option>
+                          <option value="440">
+                            Теория металлургических процессов
+                          </option>
+                          <option value="441">Теория множеств</option>
+                          <option value="442">Теория оптимизации</option>
+                          <option value="443">Теория организации</option>
+                          <option value="444">Теория пластичности</option>
+                          <option value="445">Теория принятия решений</option>
+                          <option value="446">
+                            Теория принятия управленческих решений
+                          </option>
+                          <option value="447">Теория управления</option>
+                          <option value="448">Теория упругости</option>
+                          <option value="449">
+                            Теория устойчивости и катастроф
+                          </option>
+                          <option value="450">Теплотехника</option>
+                          <option value="451">Термодинамика</option>
+                          <option value="452">Техническая физик</option>
+                          <option value="453">
+                            Техническое обслуживание и ремонт автомобилей
+                          </option>
+                          <option value="454">Технология машиностроения</option>
+                          <option value="455">
+                            Технология пищевой промышленности
+                          </option>
+                          <option value="456">Тифлопедагогика</option>
+                          <option value="457">ТММ</option>
+                          <option value="458">
+                            Товароведение непродовольственных товаро
+                          </option>
+                          <option value="459">
+                            Товароведение продовольственных товаров
+                          </option>
+                          <option value="460">Топография</option>
+                          <option value="461">Топология</option>
+                          <option value="462">Топология</option>
+                          <option value="463">ТОЭ</option>
+                          <option value="464">Тракторостроение</option>
+                          <option value="465">Транспорт</option>
+                          <option value="466">Транспортная логистика</option>
+                          <option value="467">Транспортное право</option>
+                          <option value="468">
+                            Транспортное строительство
+                          </option>
+                          <option value="469">Трудовое право</option>
+                          <option value="470">ТФКП</option>
+                          <option value="471">ТЭЦ</option>
+                          <option value="472">Уголовное право</option>
+                          <option value="473">Украинский</option>
+                          <option value="474">Управление качеством</option>
+                          <option value="475">Управление персоналом</option>
+                          <option value="476">Управление проектами</option>
+                          <option value="477">Управление рисками</option>
+                          <option value="478">Учет в АПК</option>
+                          <option value="479">Учет в банковской сфере</option>
+                          <option value="480">Учет в промышленности</option>
+                          <option value="481">Учет в строительстве</option>
+                          <option value="482">Учет в сфере обслуживания</option>
+                          <option value="483">Учет в торговле</option>
+                          <option value="484">Фармацевтическая химия</option>
+                          <option value="485">Физика</option>
+                          <option value="486">Физика атмосферы</option>
+                          <option value="487">Физика высоких энергий</option>
+                          <option value="488">
+                            Физика конденсированных сред
+                          </option>
+                          <option value="489">Физика плазмы</option>
+                          <option value="490">
+                            Физика твердого тела/атомов/молекул/нано
+                          </option>
+                          <option value="491">
+                            Физика элементарных частиц
+                          </option>
+                          <option value="492">Физиология</option>
+                          <option value="493">Физическая география</option>
+                          <option value="494">Физическая химия</option>
+                          <option value="495">
+                            Физические основы электроники
+                          </option>
+                          <option value="496">Физкультура и спорт</option>
+                          <option value="497">Философия</option>
+                          <option value="498">Философия права</option>
+                          <option value="499">Финансовая математика</option>
+                          <option value="500">Финансовое право</option>
+                          <option value="501">Финансовый менеджмент</option>
+                          <option value="502">Финансы</option>
+                          <option value="503">Финский</option>
+                          <option value="504">Фольклор</option>
+                          <option value="505">Фотография</option>
+                          <option value="506">Французский</option>
+                          <option value="507">Функциональный анализ</option>
+                          <option value="508">Химическая термодинамика</option>
+                          <option value="509">Химическая физика</option>
+                          <option value="510">Химическое машиностроение</option>
+                          <option value="511">Химия</option>
+                          <option value="512">Хирургия</option>
+                          <option value="513">Хозяйственное право</option>
+                          <option value="514">Холодильное оборудование</option>
+                          <option value="515">Хореография</option>
+                          <option value="516">Ценообразование</option>
+                          <option value="517">Цитология</option>
+                          <option value="518">
+                            Цифровая обработка сигнала
+                          </option>
+                          <option value="519">Чертежи в AutoCad</option>
+                          <option value="520">Чертежи в SolidWorks</option>
+                          <option value="521">Чертежи в КОМПАС</option>
+                          <option value="522">Чешский</option>
+                          <option value="523">Численные методы</option>
+                          <option value="524">Шведский</option>
+                          <option value="525">Школоведение</option>
+                          <option value="526">Школьная математика</option>
+                          <option value="527">Экологическое право</option>
+                          <option value="528">Экология</option>
+                          <option value="529">Эконометрика</option>
+                          <option value="530">Экономика АПК</option>
+                          <option value="531">Экономика в строительстве</option>
+                          <option value="532">Экономика отрасли</option>
+                          <option value="533">Экономика предприятия</option>
+                          <option value="534">
+                            Экономика природопользования
+                          </option>
+                          <option value="535">Экономика формации</option>
+                          <option value="536">Экономическая география</option>
+                          <option value="537">Экономическая психология</option>
+                          <option value="538">Экономическая социология</option>
+                          <option value="539">Экономическая статистика</option>
+                          <option value="540">Экономическая теория</option>
+                          <option value="541">Экономическое право</option>
+                          <option value="542">Экосоциология</option>
+                          <option value="543">Экскурсоведение</option>
+                          <option value="544">
+                            Экспериментальная психология
+                          </option>
+                          <option value="545">Электродинамика</option>
+                          <option value="546">Электромеханика</option>
+                          <option value="547">Электроника</option>
+                          <option value="548">Электросвязь</option>
+                          <option value="549">Электроснабжение</option>
+                          <option value="550">Электротехника</option>
+                          <option value="551">
+                            Электротехническая промышленность
+                          </option>
+                          <option value="552">Электроэнергетика</option>
+                          <option value="553">Эмиссионная электроника</option>
+                          <option value="554">ЭММ</option>
+                          <option value="555">Энергетика</option>
+                          <option value="556">Энергосбережени</option>
+                          <option value="557">Эпистемология</option>
+                          <option value="558">Эргономика</option>
+                          <option value="559">Эстетика</option>
+                          <option value="560">Этика</option>
+                          <option value="561">Этнолингвистика</option>
+                          <option value="562">Этносоциология</option>
+                          <option value="563">Этология</option>
+                          <option value="564">Юридическая психология</option>
+                          <option value="565">Юриспруденция</option>
+                          <option value="566">Ядерная физика</option>
+                          <option value="567">Языкознание</option>
+                          <option value="568">Японский</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="d-grid">
+                      <div class="count-page">
+                        <label for="c-page">Количество страниц</label>
+                        <select name="" id="c-page" class="c-page">
+                          <option></option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                          <option value="32">32</option>
+                          <option value="33">33</option>
+                          <option value="34">34</option>
+                          <option value="35">35</option>
+                          <option value="36">36</option>
+                          <option value="37">37</option>
+                          <option value="38">38</option>
+                          <option value="39">39</option>
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                          <option value="47">47</option>
+                          <option value="48">48</option>
+                          <option value="49">49</option>
+                          <option value="50">50</option>
+                          <option value="51">51</option>
+                          <option value="52">52</option>
+                          <option value="53">53</option>
+                          <option value="54">54</option>
+                          <option value="55">55</option>
+                          <option value="56">56</option>
+                          <option value="57">57</option>
+                          <option value="58">58</option>
+                          <option value="59">59</option>
+                          <option value="60">60</option>
+                          <option value="61">61</option>
+                          <option value="62">62</option>
+                          <option value="63">63</option>
+                          <option value="64">64</option>
+                          <option value="65">65</option>
+                          <option value="66">66</option>
+                          <option value="67">67</option>
+                          <option value="68">68</option>
+                          <option value="69">69</option>
+                          <option value="70">70</option>
+                          <option value="71">71</option>
+                          <option value="72">72</option>
+                          <option value="73">73</option>
+                          <option value="74">74</option>
+                          <option value="75">75</option>
+                          <option value="76">76</option>
+                          <option value="77">77</option>
+                          <option value="78">78</option>
+                          <option value="79">79</option>
+                          <option value="80">80</option>
+                          <option value="81">81</option>
+                          <option value="82">82</option>
+                          <option value="83">83</option>
+                          <option value="84">84</option>
+                          <option value="85">85</option>
+                          <option value="86">86</option>
+                          <option value="87">87</option>
+                          <option value="88">88</option>
+                          <option value="89">89</option>
+                          <option value="90">90</option>
+                          <option value="91">91</option>
+                          <option value="92">92</option>
+                          <option value="93">93</option>
+                          <option value="94">94</option>
+                          <option value="95">95</option>
+                          <option value="96">96</option>
+                          <option value="97">97</option>
+                          <option value="98">98</option>
+                          <option value="99">99</option>
+                          <option value="100">100</option>
+                          <option value="101">101</option>
+                          <option value="102">102</option>
+                          <option value="103">103</option>
+                          <option value="104">104</option>
+                          <option value="105">105</option>
+                          <option value="106">106</option>
+                          <option value="107">107</option>
+                          <option value="108">108</option>
+                          <option value="109">109</option>
+                          <option value="110">110</option>
+                          <option value="111">111</option>
+                          <option value="112">112</option>
+                          <option value="113">113</option>
+                          <option value="114">114</option>
+                          <option value="115">115</option>
+                          <option value="116">116</option>
+                          <option value="117">117</option>
+                          <option value="118">118</option>
+                          <option value="119">119</option>
+                          <option value="120">120</option>
+                          <option value="121">121</option>
+                          <option value="122">122</option>
+                          <option value="123">123</option>
+                          <option value="124">124</option>
+                          <option value="125">125</option>
+                          <option value="126">126</option>
+                          <option value="127">127</option>
+                          <option value="128">128</option>
+                          <option value="129">129</option>
+                          <option value="130">130</option>
+                          <option value="131">131</option>
+                          <option value="132">132</option>
+                          <option value="133">133</option>
+                          <option value="134">134</option>
+                          <option value="135">135</option>
+                          <option value="136">136</option>
+                          <option value="137">137</option>
+                          <option value="138">138</option>
+                          <option value="139">139</option>
+                          <option value="140">140</option>
+                          <option value="141">141</option>
+                          <option value="142">142</option>
+                          <option value="143">143</option>
+                          <option value="144">144</option>
+                          <option value="145">145</option>
+                          <option value="146">146</option>
+                          <option value="147">147</option>
+                          <option value="148">148</option>
+                          <option value="149">149</option>
+                          <option value="150">150</option>
+                        </select>
+                      </div>
+                      <div class="count-date">
+                        <label for="f-date">Срок</label>
+                        <input
+                          type="text"
+                          onfocus="(this.type='date')"
+                          onblur="(this.type='text')"
+                          name="asdas"
+                          id="f-date"
+                          placeholder="Срок сдачи"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-grid">
+                      <div class="text-theme">
+                        <label for="theme">Тема</label>
+                        <input
+                          type="text"
+                          id="theme"
+                          placeholder="Название темы"
+                        />
+                      </div>
+                      <div class="email-theme">
+                        <label for="t-theme">Email</label>
+                        <input
+                          type="mail"
+                          id="t-email"
+                          placeholder="Ваш Email"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex i-range">
+                      <span class="text">Оригинальность работы</span>
+                      <input
+                        type="range"
+                        name=""
+                        id="i-range"
+                        min="1"
+                        max="100"
+                        step="1"
+                        value="25"
+                        class="styled-slider slider-progress"
+                      />
+                      <div class="data-percent">
+                        <span class="field-range">25</span>%
+                      </div>
+                    </div>
+                    <div class="additionally">
+                      <details>
+                        <summary>Дополнительные требования</summary>
+                        <textarea name="" id="" rows="5"></textarea>
+                      </details>
+                    </div>
+                  </form>
+                </div>
+                <div class="total">
+                  <div class="time">
+                    <img
+                      src="./media/images/icons/clock.svg"
+                      alt="clock"
+                      width="40"
+                      height="40"
+                    />
+                    <p>Ответим менее, чем за <b>2 часа</b></p>
+                  </div>
+                  <div class="sale">
+                    <img
+                      src="./media/images/icons/sale.svg"
+                      alt="sale"
+                      width="40"
+                      height="40"
+                    />
+                    <p>Скидка на первый заказ - <b>5%</b></p>
+                  </div>
+                  <div class="total-box">
+                    <div class="text">
+                      <img
+                        src="./media/images/icons/money.svg"
+                        alt="money"
+                        width="40"
+                        height="40"
+                      />
+                      <p>Предварительная стоимость:</p>
+                    </div>
+                    <div class="sum"><span>2555</span> $</div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn">Узнать стоимость</button>
+              <p class="private-policy">
+                Я даю согласие на обработку своих персональных данных в
+                соответствии с политикой конфиденциальности и принимаю условия
+                договора <a href="#">публичной оферты</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="we-do">
+          <img
+            src="./media/images/we-do__bg.png"
+            alt="we go background"
+            width="1920"
+            height="1096"
+            class="we-do__bg"
+          />
+          <div class="container">
+            <div class="we-do__inner">
+              <h2
+                class="section-heading section-heading--decor-left we-do__section-heading"
+              >
+                Мы делаем
+              </h2>
+              <div class="we-do__cards">
+                <div class="we-do-card we-do__we-do-card">
+                  <div>
+                    <header
+                      class="we-do-card__header we-do-card__header--clr-green"
+                    >
+                      <h3 class="we-do-card__heading">Дипломные работы</h3>
+                      <img
+                        src="./media/images/icons/we-do/0.svg"
+                        alt="alt"
+                        width="31"
+                        height="44"
+                        class="we-do-card__icon"
+                      />
+                    </header>
+                    <div class="we-do-card__body">
+                      <ul class="key-value-list we-do-card__key-value-list">
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Объем работы:</p>
+                          <p class="key-value-list__value">от 80 страниц</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Сроки выполнения::</p>
+                          <p class="key-value-list__value">10-30 дней</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Автор:</p>
+                          <p class="key-value-list__value">
+                            Преподаватель / кандидат наук
+                          </p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Бесплатные правки:</p>
+                          <p class="key-value-list__value">1 месяц</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">
+                            Бесплатные материалы:
+                          </p>
+                          <p class="key-value-list__value">
+                            План, презентация, речь, отчет об уникальности
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="we-do-card__footer">
+                    <div class="we-do-card__price-box">
+                      <p class="we-do-card__footer-text">Цена:</p>
+                      <p class="we-do-card__price">от 4100 $</p>
+                    </div>
+                    <div class="we-do-card__btn-box">
+                      <button class="btn we-do-card__btn">Заказать</button>
+                    </div>
+                  </footer>
+                </div>
+                <div class="we-do-card we-do__we-do-card">
+                  <div>
+                    <header
+                      class="we-do-card__header we-do-card__header--clr-blue"
+                    >
+                      <h3 class="we-do-card__heading">Курсовые работы</h3>
+                      <img
+                        src="./media/images/icons/we-do/1.svg"
+                        alt="alt"
+                        width="31"
+                        height="44"
+                        class="we-do-card__icon"
+                      />
+                    </header>
+                    <div class="we-do-card__body">
+                      <ul class="key-value-list we-do-card__key-value-list">
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Объем работы:</p>
+                          <p class="key-value-list__value">от 30 страниц</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Сроки выполнения::</p>
+                          <p class="key-value-list__value">от 4 дней</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Автор:</p>
+                          <p class="key-value-list__value">
+                            Преподаватель / кандидат наук
+                          </p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Бесплатные правки:</p>
+                          <p class="key-value-list__value">1 месяц</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">
+                            Бесплатные материалы:
+                          </p>
+                          <p class="key-value-list__value">
+                            План, отчет об уникальности
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="we-do-card__footer">
+                    <div class="we-do-card__price-box">
+                      <p class="we-do-card__footer-text">Цена:</p>
+                      <p class="we-do-card__price">от 650 $</p>
+                    </div>
+                    <div class="we-do-card__btn-box">
+                      <button class="btn we-do-card__btn">Заказать</button>
+                    </div>
+                  </footer>
+                </div>
+                <div class="we-do-card we-do__we-do-card">
+                  <div>
+                    <header
+                      class="we-do-card__header we-do-card__header--clr-yellow"
+                    >
+                      <h3 class="we-do-card__heading">Рефераты</h3>
+                      <img
+                        src="./media/images/icons/we-do/2.svg"
+                        alt="alt"
+                        width="31"
+                        height="44"
+                        class="we-do-card__icon"
+                      />
+                    </header>
+                    <div class="we-do-card__body">
+                      <ul class="key-value-list we-do-card__key-value-list">
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Объем работы:</p>
+                          <p class="key-value-list__value">от 10-20 страниц</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Сроки выполнения::</p>
+                          <p class="key-value-list__value">от 2 дней</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Автор:</p>
+                          <p class="key-value-list__value">Преподаватель</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Бесплатные правки:</p>
+                          <p class="key-value-list__value">1 месяц</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">
+                            Бесплатные материалы:
+                          </p>
+                          <p class="key-value-list__value">
+                            Отчет об уникальности
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="we-do-card__footer">
+                    <div class="we-do-card__price-box">
+                      <p class="we-do-card__footer-text">Цена:</p>
+                      <p class="we-do-card__price">от 250 $</p>
+                    </div>
+                    <div class="we-do-card__btn-box">
+                      <button class="btn we-do-card__btn">Заказать</button>
+                    </div>
+                  </footer>
+                </div>
+                <div class="we-do-card we-do__we-do-card">
+                  <div>
+                    <header
+                      class="we-do-card__header we-do-card__header--clr-red"
+                    >
+                      <h3 class="we-do-card__heading">Решение задач</h3>
+                      <img
+                        src="./media/images/icons/we-do/3.svg"
+                        alt="alt"
+                        width="44"
+                        height="44"
+                        class="we-do-card__icon"
+                      />
+                    </header>
+                    <div class="we-do-card__body">
+                      <ul class="key-value-list we-do-card__key-value-list">
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Объем работы:</p>
+                          <p class="key-value-list__value">от 1 дня</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Автор:</p>
+                          <p class="key-value-list__value">Преподаватель</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">Бесплатные правки:</p>
+                          <p class="key-value-list__value">1 месяц</p>
+                        </li>
+                        <li class="key-value-list__item">
+                          <p class="key-value-list__key">
+                            Бесплатные материалы:
+                          </p>
+                          <p class="key-value-list__value">
+                            Отчет об уникальности
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="we-do-card__footer">
+                    <div class="we-do-card__price-box">
+                      <p class="we-do-card__footer-text">Цена:</p>
+                      <p class="we-do-card__price">от 110 $</p>
+                    </div>
+                    <div class="we-do-card__btn-box">
+                      <button class="btn we-do-card__btn">Заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <div class="additional-services">
+                <h2
+                  class="section-heading section-heading--size-md section-heading--decor-left additional-services__section-heading"
+                >
+                  Дополнительные услуги
+                </h2>
+                <div class="additional-services__cards">
+                  <div
+                    class="additional-service-card additional-services__additional-service-card"
+                  >
+                    <h3 class="additional-service-card__heading">
+                      Отчет по практике
+                    </h3>
+                    <div class="additional-service-card__footer">
+                      <p class="additional-service-card__text">Цена:</p>
+                      <p class="additional-service-card__price">от 1000 $</p>
+                    </div>
+                  </div>
+                  <div
+                    class="additional-service-card additional-services__additional-service-card"
+                  >
+                    <h3 class="additional-service-card__heading">
+                      Контрольная работа
+                    </h3>
+                    <div class="additional-service-card__footer">
+                      <p class="additional-service-card__text">Цена:</p>
+                      <p class="additional-service-card__price">от 220 $</p>
+                    </div>
+                  </div>
+                  <div
+                    class="additional-service-card additional-services__additional-service-card"
+                  >
+                    <h3 class="additional-service-card__heading">
+                      Бизнес-план
+                    </h3>
+                    <div class="additional-service-card__footer">
+                      <p class="additional-service-card__text">Цена:</p>
+                      <p class="additional-service-card__price">от 1000 $</p>
+                    </div>
+                  </div>
+                  <div
+                    class="additional-service-card additional-services__additional-service-card"
+                  >
+                    <h3 class="additional-service-card__heading">Эссе</h3>
+                    <div class="additional-service-card__footer">
+                      <p class="additional-service-card__text">Цена:</p>
+                      <p class="additional-service-card__price">от 220 $</p>
+                    </div>
+                  </div>
+                  <div
+                    class="additional-service-card additional-services__additional-service-card"
+                  >
+                    <h3 class="additional-service-card__heading">
+                      Ответы на билеты
+                    </h3>
+                    <div class="additional-service-card__footer">
+                      <p class="additional-service-card__text">Цена:</p>
+                      <p class="additional-service-card__price">от 130 $</p>
+                    </div>
+                  </div>
+                  <div
+                    class="additional-service-card additional-services__additional-service-card"
+                  >
+                    <h3 class="additional-service-card__heading">Рецензия</h3>
+                    <div class="additional-service-card__footer">
+                      <p class="additional-service-card__text">Цена:</p>
+                      <p class="additional-service-card__price">от 100 $</p>
+                    </div>
+                  </div>
+                  <div
+                    class="additional-service-card additional-services__additional-service-card"
+                  >
+                    <h3 class="additional-service-card__heading">Чертежи</h3>
+                    <div class="additional-service-card__footer">
+                      <p class="additional-service-card__text">Цена:</p>
+                      <p class="additional-service-card__price">от 600 $</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="how-work">
+          <img
+            loading="lazy"
+            src="./media/images/bg-how-work.svg"
+            width="1920"
+            height="767"
+            alt="how-work"
+            class="how-work-bg"
+          />
+
+          <div class="container">
+            <div class="how-work__inner">
+              <h2
+                class="section-heading section-heading--decor-left how-work__section-heading"
+              >
+                Как работает сервис
+              </h2>
+              <div class="how-work__content">
+                <div class="how-work__images">
+                  <img
+                    src="./media/images/how-work__img.png"
+                    alt="alt"
+                    width="641"
+                    height="482"
+                    class="how-work__img how-work__img--active"
+                  />
+                  <img
+                    src="./media/images/how-work__img.png"
+                    alt="alt"
+                    width="641"
+                    height="482"
+                    class="how-work__img"
+                  />
+                  <img
+                    src="./media/images/how-work__img.png"
+                    alt="alt"
+                    width="641"
+                    height="482"
+                    class="how-work__img"
+                  />
+                  <img
+                    src="./media/images/how-work__img.png"
+                    alt="alt"
+                    width="641"
+                    height="482"
+                    class="how-work__img"
+                  />
+                </div>
+                <div class="how-work__buttons">
+                  <div class="how-work__buttons-inner">
+                    <button
+                      class="how-work-button how-work-button--active how-work__how-work-button"
+                    >
+                      <span class="how-work-button__text-box"
+                        >Заполните форму на сайте. В течение 2 часов мы подберем
+                        лучшего автора для вашего задания и назовем вам
+                        цену</span
+                      >
+                      <span class="how-work-button__number-box">
+                        <span class="how-work-button__number">1</span>
+                      </span>
+                    </button>
+                    <button class="how-work-button how-work__how-work-button">
+                      <span class="how-work-button__text-box"
+                        >Внесите предоплату и мы приступим к работе</span
+                      >
+                      <span class="how-work-button__number-box">
+                        <span class="how-work-button__number">2</span>
+                      </span>
+                    </button>
+                    <button class="how-work-button how-work__how-work-button">
+                      <span class="how-work-button__text-box"
+                        >Следите за выполнением работы, общайтесь с
+                        автором</span
+                      >
+                      <span class="how-work-button__number-box">
+                        <span class="how-work-button__number">3</span>
+                      </span>
+                    </button>
+                    <button class="how-work-button how-work__how-work-button">
+                      <span class="how-work-button__text-box"
+                        >Ознакомьтесь с заказом и оплатите остаток</span
+                      >
+                      <span class="how-work-button__number-box">
+                        <span class="how-work-button__number">4</span>
+                      </span>
+                    </button>
+                  </div>
+                  <button class="btn btn--size-md how-work__btn">
+                    Заполните форму
+                  </button>
+                </div>
+              </div>
+              <div class="how-work__text-info">
+                <p class="how-work__text">
+                  Внесите предоплату и мы приступим к работе
+                </p>
+                <button class="btn btn--size-md how-work__text-into-btn">
+                  Заполните форму
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="request">
+          <picture>
+            <source
+              srcset="./media/images/workers/bg-request.svg"
+              media="(min-width: 426px)"
+              class="request__bg"
+            />
+
+            <img src="./media/images/workers/bg-request--mobile.svg"
+            loading="lazy" alt="bg" width="320" height="526"
+            class="how-work-bg"" />
+          </picture>
+
+          <div class="container">
+            <div class="request__inner">
+              <h2 class="section-heading section-heading--decor-left">
+                Заполните заявку <br />на просчет и получите:
+              </h2>
+              <div class="request__content">
+                <div class="request__content-items">
+                  <div class="item">
+                    <div class="icon">
+                      <picture>
+                        <source
+                          srcset="./media/images/icons/like.svg"
+                          media="(max-width: 426px)"
+                        />
+                        <img
+                          src="./media/images/icons/motivation.svg"
+                          loading="lazy"
+                          alt="motivation"
+                          width="200"
+                          height="200"
+                        />
+                      </picture>
+                    </div>
+                    <div class="lists">
+                      <h3 class="section-heading section-heading--decor-left">
+                        Качество
+                      </h3>
+                      <ul>
+                        <li>
+                          Мы расскажем какие у нас стандарты выполнения, как
+                          проверяются готовые работы, какие гарантии на них
+                          даются
+                        </li>
+                        <li>
+                          Мы расскажем какие у нас стандарты выполнения, как
+                          проверяются готовые работы, какие гарантии на них
+                          даются
+                        </li>
+                        <li>
+                          Мы расскажем какие у нас стандарты выполнения, как
+                          проверяются готовые работы, какие гарантии на них
+                          даются
+                        </li>
+                        <li>
+                          Мы расскажем какие у нас стандарты выполнения, как
+                          проверяются готовые работы, какие гарантии на них
+                          даются
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="lists">
+                      <h3 class="section-heading section-heading--decor-left">
+                        Личный менеджер - это персональный помощник, который:
+                      </h3>
+                      <ul>
+                        <li>
+                          Сэкономит ваше время — проконтролирует ход работы,
+                          проверит работу на соответствие начальному заданию
+                          и.т.п
+                        </li>
+                        <li>
+                          Сохранит ваши деньги — подберет наиболее подходящего
+                          автора и даже поторгуется с ним, расскажет о акциях и
+                          скидках и.т.д
+                        </li>
+                        <li>
+                          Сбережёт ваши нервы — проследит за соблюдением сроков,
+                          решит все вопросы связанные с правками и доработками и
+                          др
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="icon">
+                      <picture>
+                        <source
+                          srcset="./media/images/icons/fr.svg"
+                          media="(max-width: 426px)"
+                        />
+
+                        <img
+                          src="./media/images/icons/cooperate.svg"
+                          loading="lazy"
+                          alt="cooperate"
+                          width="200"
+                          height="200"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="icon">
+                      <picture>
+                        <source
+                          srcset="./media/images/icons/per.svg"
+                          media="(max-width: 426px)"
+                        />
+                        <img
+                          src="./media/images/icons/discount.svg"
+                          alt="discount"
+                          width="200"
+                          height="200"
+                        />
+                      </picture>
+                    </div>
+                    <div class="lists">
+                      <h3 class="section-heading section-heading--decor-left">
+                        Цены/акции/скидки
+                      </h3>
+                      <ul>
+                        <li>
+                          Здесь кратко расскажем о скидках - 5% на первый заказ,
+                          15% если заказывать вместе с другом Здесь кратко
+                          сскажем о скидках - 5% на первый заказ, 15% если
+                          заказывать вместе с другом
+                        </li>
+                        <li>
+                          Здесь кратко расскажем о скидках - 5% на первый заказ,
+                          15% если заказывать вместе с другом
+                        </li>
+                        <li>
+                          Здесь кратко расскажем о скидках - 5% на первый заказ,
+                          15% если заказывать вместе с другом
+                        </li>
+                        <li>
+                          Здесь кратко расскажем о скидках - 5% на первый заказ,
+                          15% если заказывать вместе с другом
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn partner-program__btn">
+                  Узнать стоимость
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <img
+            src="./media/images/faq__bg.png"
+            alt="alt"
+            width="1920"
+            height="818"
+            class="faq__bg"
+          />
+          <img
+            src="./media/images/faq__bg-mobile.png"
+            alt="alt"
+            width="320"
+            height="674"
+            class="faq__bg-mobile"
+          />
+          <div class="container">
+            <div class="faq__inner">
+              <h2
+                class="faq__section-heading section-heading section-heading--decor-right section-heading--decor-left"
+              >
+                Часто задаваемые вопросы
+              </h2>
+              <div class="faq__items">
+                <div class="faq-item faq__faq-item">
+                  <button class="faq-item__header">
+                    <span class="faq-item__number-box">
+                      <span class="faq-item__number">01</span>
+                    </span>
+                    <h3 class="faq-item__heading">Вы работаете онлайн?</h3>
+                    <span class="faq-item__plus-icon"></span>
+                  </button>
+                  <div class="faq-item__body">
+                    <div class="faq-item__body-inner">
+                      <p class="faq-item__text">
+                        Для заказа работы вам необходимо зарегистрироваться на
+                        нашем сайте. Регистрация займет не более одной минуты,
+                        НО взамен вы получите удобный кабинет для мониторинга
+                        своих заказов, общения с менеджером/автором.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item faq__faq-item">
+                  <button class="faq-item__header">
+                    <span class="faq-item__number-box">
+                      <span class="faq-item__number">02</span>
+                    </span>
+                    <h3 class="faq-item__heading">Как заказать работу?</h3>
+                    <span class="faq-item__plus-icon"></span>
+                  </button>
+                  <div class="faq-item__body">
+                    <div class="faq-item__body-inner">
+                      <p class="faq-item__text">
+                        Для заказа работы вам необходимо зарегистрироваться на
+                        нашем сайте. Регистрация займет не более одной минуты,
+                        НО взамен вы получите удобный кабинет для мониторинга
+                        своих заказов, общения с менеджером/автором.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item faq__faq-item">
+                  <button class="faq-item__header">
+                    <span class="faq-item__number-box">
+                      <span class="faq-item__number">03</span>
+                    </span>
+                    <h3 class="faq-item__heading">Как оплатить работу?</h3>
+                    <span class="faq-item__plus-icon"></span>
+                  </button>
+                  <div class="faq-item__body">
+                    <div class="faq-item__body-inner">
+                      <p class="faq-item__text">
+                        Для заказа работы вам необходимо зарегистрироваться на
+                        нашем сайте. Регистрация займет не более одной минуты,
+                        НО взамен вы получите удобный кабинет для мониторинга
+                        своих заказов, общения с менеджером/автором.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item faq__faq-item">
+                  <button class="faq-item__header">
+                    <span class="faq-item__number-box">
+                      <span class="faq-item__number">04</span>
+                    </span>
+                    <h3 class="faq-item__heading">
+                      От чего зависит стоимость работы?
+                    </h3>
+                    <span class="faq-item__plus-icon"></span>
+                  </button>
+                  <div class="faq-item__body">
+                    <div class="faq-item__body-inner">
+                      <p class="faq-item__text">
+                        Для заказа работы вам необходимо зарегистрироваться на
+                        нашем сайте. Регистрация займет не более одной минуты,
+                        НО взамен вы получите удобный кабинет для мониторинга
+                        своих заказов, общения с менеджером/автором.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="faq__btn btn btn--style-transparent">
+                Все вопросы
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="last-work">
+          <img
+            src="./media/images/workers/bg-last-work.svg"
+            alt="bg"
+            width="1920"
+            height="763"
+            class="last-work__bg"
+          />
+          <img
+            src="./media/images/workers/bg-last-work-mobile.svg"
+            alt="bg"
+            width="320"
+            height="526"
+            class="last-work__bg-mobile"
+          />
+          <div class="container">
+            <div class="last-work__inner">
+              <h2
+                class="section-heading section-heading--decor-right section-heading--decor-left"
+              >
+                Сделали <span>ХХ</span> работ
+              </h2>
+              <p class="last-work__subtitle">Последние выполненные работы</p>
+              <div class="last-work__table">
+                <table bordercolor="#FAFBFD">
+                  <thead class="thead">
+                    <tr class="trHead">
+                      <th>ТИП</th>
+                      <th>ТЕМА</th>
+                      <th>СРОК</th>
+                      <th>Уникальность</th>
+                      <th>Цена,руб</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Курсовая работа</td>
+                      <td>
+                        Российский опыт формирования и реализации инновационной
+                        политики
+                      </td>
+                      <td>2021/04/05</td>
+                      <td>8,1</td>
+                      <td><b>55 000</b></td>
+                    </tr>
+                    <tr>
+                      <td>План</td>
+                      <td>
+                        Использование современных аппаратно-программных
+                        комплексов в обеспечении производства судебных
+                        инженерно-технических экспертиз
+                      </td>
+                      <td>2021/04/05</td>
+                      <td>8,1</td>
+                      <td><b>55 000</b></td>
+                    </tr>
+                    <tr>
+                      <td>Задача</td>
+                      <td>Предмет: Организация следственной деятельности</td>
+                      <td>2021/04/05</td>
+                      <td>8,1</td>
+                      <td><b>155 000</b></td>
+                    </tr>
+                    <tr>
+                      <td>Курсовая работа</td>
+                      <td>
+                        Российский опыт формирования и реализации инновационной
+                        политики
+                      </td>
+                      <td>2021/04/05</td>
+                      <td>8,1</td>
+                      <td><b>55 000</b></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="btn partner-program__btn">
+                  Узнать стоимость своей работы
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <img
+            src="./media/images/reviews__bg.svg"
+            alt="bg"
+            width="1920"
+            height="707"
+            class="reviews__bg"
+          />
+          <img
+            src="./media/images/reviews__bg-mobile.svg"
+            alt="bg"
+            width="320"
+            height="526"
+            class="reviews__bg-mobile"
+          />
+          <div class="container">
+            <div class="reviews__inner">
+              <h2
+                class="reviews__section-heading section-heading section-heading--decor-right section-heading--decor-left"
+              >
+                Отзывы
+              </h2>
+              <div class="reviews__swiper swiper">
+                <ul
+                  class="reviews__slides reviews__swiper-wrapper swiper-wrapper"
+                >
+                  <li class="reviews__slide reviews__swiper-slide swiper-slide">
+                    <div class="review-card reviews__review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__header-text">
+                          <h3 class="review-card__heading">Владимир Иванов</h3>
+                          <p class="review-card__age">21 лет, Киев</p>
+                        </div>
+                        <img
+                          src="./media/images/reviews/1.png"
+                          alt="image"
+                          width="68"
+                          height="68"
+                          class="review-card__avatar"
+                        />
+                      </div>
+                      <div class="review-card__body read-more-box">
+                        <p class="review-card__text read-more-text">
+                          Повседневная практика показывает, что начало
+                          повседневной работы по формированию позиции
+                          представляет собой интересный эксперимент проверки
+                          дальнейших направлений развития. Повседневная практика
+                          показывает, что укрепление и развитие структуры
+                          позволяет оценить значение Повседневная практика
+                          показывает, что начало повседневной работы по
+                          формированию позиции представляет собой интересный
+                          эксперимент проверки дальнейших
+                        </p>
+                        <button
+                          class="review-card__read-more-btn read-more-btn"
+                          data-orig-text="Читать далее"
+                          data-active-text="Скрыть"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="reviews__slide reviews__swiper-slide swiper-slide">
+                    <div class="review-card reviews__review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__header-text">
+                          <h3 class="review-card__heading">Илья Петров</h3>
+                          <p class="review-card__age">18 лет, Москва</p>
+                        </div>
+                        <img
+                          src="./media/images/reviews/2.png"
+                          alt="image"
+                          width="68"
+                          height="68"
+                          class="review-card__avatar"
+                        />
+                      </div>
+                      <div class="review-card__body read-more-box">
+                        <p class="review-card__text read-more-text">
+                          Повседневная практика показывает, что начало
+                          повседневной работы по формированию позиции
+                          представляет собой интересный эксперимент проверки
+                          дальнейших направлений развития. Повседневная практика
+                          показывает, что укрепление и развитие структуры
+                          позволяет оценить значение Повседневная практика
+                          показывает, что начало повседневной работы по
+                          формированию позиции представляет собой интересный
+                          эксперимент проверки дальнейших
+                        </p>
+                        <button
+                          class="review-card__read-more-btn read-more-btn"
+                          data-orig-text="Читать далее"
+                          data-active-text="Скрыть"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="reviews__slide reviews__swiper-slide swiper-slide">
+                    <div class="review-card reviews__review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__header-text">
+                          <h3 class="review-card__heading">Альбина Нокина</h3>
+                          <p class="review-card__age">20 лет, Атырау</p>
+                        </div>
+                        <img
+                          src="./media/images/reviews/3.png"
+                          alt="image"
+                          width="68"
+                          height="68"
+                          class="review-card__avatar"
+                        />
+                      </div>
+                      <div class="review-card__body read-more-box">
+                        <p class="review-card__text read-more-text">
+                          Повседневная практика показывает, что начало
+                          повседневной работы по формированию позиции
+                          представляет собой интересный эксперимент проверки
+                          дальнейших направлений развития. Повседневная практика
+                          показывает, что укрепление и развитие структуры
+                          позволяет оценить значение Повседневная практика
+                          показывает, что начало повседневной работы по
+                          формированию позиции представляет собой интересный
+                          эксперимент проверки дальнейших
+                        </p>
+                        <button
+                          class="review-card__read-more-btn read-more-btn"
+                          data-orig-text="Читать далее"
+                          data-active-text="Скрыть"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="reviews__slide reviews__swiper-slide swiper-slide">
+                    <div class="review-card reviews__review-card">
+                      <div class="review-card__header">
+                        <div class="review-card__header-text">
+                          <h3 class="review-card__heading">Владимир Иванов</h3>
+                          <p class="review-card__age">21 лет, Киев</p>
+                        </div>
+                        <img
+                          src="./media/images/reviews/1.png"
+                          alt="image"
+                          width="68"
+                          height="68"
+                          class="review-card__avatar"
+                        />
+                      </div>
+                      <div class="review-card__body read-more-box">
+                        <p class="review-card__text read-more-text">
+                          Повседневная практика показывает, что начало
+                          повседневной работы по формированию позиции
+                          представляет собой интересный эксперимент проверки
+                          дальнейших направлений развития. Повседневная практика
+                          показывает, что укрепление и развитие структуры
+                          позволяет оценить значение Повседневная практика
+                          показывает, что начало повседневной работы по
+                          формированию позиции представляет собой интересный
+                          эксперимент проверки дальнейших
+                        </p>
+                        <button
+                          class="review-card__read-more-btn read-more-btn"
+                          data-orig-text="Читать далее"
+                          data-active-text="Скрыть"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="reviews__btns">
+                  <button
+                    type="button"
+                    class="reviews__swiper-btn swiper-btn swiper-btn--prev"
+                  >
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_40_294)">
+                        <path
+                          class="arrow"
+                          d="M0.226734 6.45631L5.28262 1.4003C5.42694 1.25598 5.61929 1.17676 5.8244 1.17676C6.02973 1.17676 6.22197 1.25609 6.36629 1.4003L6.82533 1.85945C6.96954 2.00355 7.04899 2.19602 7.04899 2.40124C7.04899 2.60634 6.96954 2.8053 6.82533 2.94939L3.8758 5.90541L13.2466 5.90541C13.6691 5.90541 14.0029 6.23618 14.0029 6.65879L14.0029 7.30791C14.0029 7.73052 13.6691 8.09463 13.2466 8.09463L3.84234 8.09463L6.82522 11.0672C6.96943 11.2115 7.04887 11.3987 7.04887 11.6039C7.04887 11.8089 6.96943 11.9989 6.82522 12.1431L6.36618 12.6008C6.22186 12.7451 6.02962 12.8237 5.82429 12.8237C5.61918 12.8237 5.42683 12.7441 5.2825 12.5997L0.22662 7.54386C0.0819555 7.39908 0.0023952 7.20581 0.00296453 7.00037C0.00250961 6.79424 0.0819554 6.60086 0.226734 6.45631Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_40_294">
+                          <rect
+                            width="14"
+                            height="14"
+                            fill="white"
+                            transform="matrix(-1 8.74234e-08 8.74222e-08 1 14.0029 0)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <div
+                    class="reviews__swiper-pagination swiper-pagination"
+                  ></div>
+                  <button
+                    type="button"
+                    class="reviews__swiper-btn swiper-btn swiper-btn--next"
+                  >
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_40_294)">
+                        <path
+                          class="arrow"
+                          d="M0.226734 6.45631L5.28262 1.4003C5.42694 1.25598 5.61929 1.17676 5.8244 1.17676C6.02973 1.17676 6.22197 1.25609 6.36629 1.4003L6.82533 1.85945C6.96954 2.00355 7.04899 2.19602 7.04899 2.40124C7.04899 2.60634 6.96954 2.8053 6.82533 2.94939L3.8758 5.90541L13.2466 5.90541C13.6691 5.90541 14.0029 6.23618 14.0029 6.65879L14.0029 7.30791C14.0029 7.73052 13.6691 8.09463 13.2466 8.09463L3.84234 8.09463L6.82522 11.0672C6.96943 11.2115 7.04887 11.3987 7.04887 11.6039C7.04887 11.8089 6.96943 11.9989 6.82522 12.1431L6.36618 12.6008C6.22186 12.7451 6.02962 12.8237 5.82429 12.8237C5.61918 12.8237 5.42683 12.7441 5.2825 12.5997L0.22662 7.54386C0.0819555 7.39908 0.0023952 7.20581 0.00296453 7.00037C0.00250961 6.79424 0.0819554 6.60086 0.226734 6.45631Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_40_294">
+                          <rect
+                            width="14"
+                            height="14"
+                            fill="white"
+                            transform="matrix(-1 8.74234e-08 8.74222e-08 1 14.0029 0)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partner-program">
+          <img
+            src="./media/images/partner-program__bg.png"
+            alt="partner program img"
+            width="1920"
+            height="817"
+            class="partner-program__bg"
+          />
+          <img
+            src="./media/images/partner-program__bg--mobile.png"
+            alt="partner program img"
+            width="320"
+            height="884"
+            class="partner-program__bg-mobile"
+          />
+          <div class="container">
+            <div class="partner-program__inner">
+              <h2
+                class="partner-program__section-heading section-heading section-heading--decor-right section-heading--decor-left"
+              >
+                Партнерская программа
+              </h2>
+              <div class="partner-program__tabs-box">
+                <div class="partner-program__buttons">
+                  <button
+                    class="partner-program__tab-btn partner-program__tab-btn--active"
+                  >
+                    Для студентов
+                  </button>
+                  <button class="partner-program__tab-btn">
+                    Для блогеров и вебмастеров
+                  </button>
+                </div>
+                <ul class="partner-program__content">
+                  <li
+                    class="partner-program__content-card partner-program__content-card--active"
+                  >
+                    <div class="partner-program__text-box">
+                      <p class="partner-program__text">
+                        Повседневная практика показывает, что начало
+                        повседневной работы по формированию позиции представляет
+                        собой интересный эксперимент проверки дальнейших
+                        направлений развития. Повседневная практика показывает,
+                        что укрепление и развитие структуры позволяет оценить
+                        значение Повседневная практика показывает, что начало
+                        повседневной работы по формированию позиции представляет
+                        собой интересный эксперимент проверки дальнейших.
+                      </p>
+                      <p class="partner-program__text">
+                        Повседневная практика показывает, что начало
+                        повседневной работы по формированию позиции представляет
+                        собой интересный эксперимент проверки дальнейших
+                        направлений развития. Повседневная практика показывает,
+                        что укрепление и развитие структуры позволяет оценить
+                        значение Повседневная практика показывает, что начало
+                        повседневной работы по формированию
+                      </p>
+                      <button class="btn partner-program__btn">
+                        Присоеденится
+                      </button>
+                    </div>
+                    <div class="partner-program__img-box">
+                      <img
+                        src="./media/images/partner-program.svg"
+                        alt="partner program"
+                        width="450"
+                        height="402"
+                        class="partner-program__img"
+                      />
+                    </div>
+                  </li>
+                  <li class="partner-program__content-card">
+                    <div class="partner-program__text-box">
+                      <p class="partner-program__text">
+                        2 Повседневная практика показывает, что начало
+                        повседневной работы по формированию позиции представляет
+                        собой интересный эксперимент проверки дальнейших
+                        направлений развития. Повседневная практика показывает,
+                        что укрепление и развитие структуры позволяет оценить
+                        значение Повседневная практика показывает, что начало
+                        повседневной работы по формированию позиции представляет
+                        собой интересный эксперимент проверки дальнейших.
+                      </p>
+                      <p class="partner-program__text">
+                        Повседневная практика показывает, что начало
+                        повседневной работы по формированию позиции представляет
+                        собой интересный эксперимент проверки дальнейших
+                        направлений развития. Повседневная практика показывает,
+                        что укрепление и развитие структуры позволяет оценить
+                        значение Повседневная практика показывает, что начало
+                        повседневной работы по формированию
+                      </p>
+                      <button class="btn partner-program__btn">
+                        Присоеденится
+                      </button>
+                    </div>
+                    <div class="partner-program__img-box">
+                      <img
+                        src="./media/images/partner-program.svg"
+                        alt="partner program"
+                        width="450"
+                        height="402"
+                        class="partner-program__img"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <img
+            src="./media/images/about__bg.svg"
+            alt="about bg"
+            width="1920"
+            height="606"
+            class="about__bg"
+          />
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__img-box">
+                <img
+                  src="./media/images/about.svg"
+                  alt="about"
+                  width="601"
+                  height="400"
+                  class="about__img"
+                />
+              </div>
+              <div class="about__text-box">
+                <h2
+                  class="about__section-heading section-heading section-heading--decor-left"
+                >
+                  О компании
+                </h2>
+                <p class="about__text">
+                  Повседневная практика показывает, что начало повседневной
+                  работы по формированию позиции представляет собой интересный
+                  эксперимент проверки дальнейших направлений развития.
+                  Повседневная практика показывает, что укрепление и развитие
+                  структуры позволяет оценить значение Повседневная практика
+                  показывает, что начало повседневной работы по формированию
+                  позиции представляет собой интересный эксперимент проверки
+                  дальнейших.
+                </p>
+                <p class="about__text">
+                  Повседневная практика показывает, что начало повседневной
+                  работы по формированию позиции представляет собой интересный
+                  эксперимент проверки дальнейших направлений развития.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="workers">
+          <img
+            src="./media/images/workers__bg.svg"
+            alt="bg"
+            width="1920"
+            height="664"
+            class="workers__bg"
+          />
+          <img
+            src="./media/images/workers__bg-mobile.svg"
+            alt="bg"
+            width="320"
+            height="539"
+            class="workers__bg-mobile"
+          />
+          <div class="container">
+            <div class="workers__inner">
+              <div class="workers__swiper swiper">
+                <h2
+                  class="workers__section-heading section-heading section-heading--decor-left section-heading--decor-right"
+                >
+                  Сотрудники
+                </h2>
+                <div class="workers__btns">
+                  <button
+                    type="button"
+                    class="workers__swiper-btn swiper-btn swiper-btn--prev"
+                  >
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_40_294)">
+                        <path
+                          class="arrow"
+                          d="M0.226734 6.45631L5.28262 1.4003C5.42694 1.25598 5.61929 1.17676 5.8244 1.17676C6.02973 1.17676 6.22197 1.25609 6.36629 1.4003L6.82533 1.85945C6.96954 2.00355 7.04899 2.19602 7.04899 2.40124C7.04899 2.60634 6.96954 2.8053 6.82533 2.94939L3.8758 5.90541L13.2466 5.90541C13.6691 5.90541 14.0029 6.23618 14.0029 6.65879L14.0029 7.30791C14.0029 7.73052 13.6691 8.09463 13.2466 8.09463L3.84234 8.09463L6.82522 11.0672C6.96943 11.2115 7.04887 11.3987 7.04887 11.6039C7.04887 11.8089 6.96943 11.9989 6.82522 12.1431L6.36618 12.6008C6.22186 12.7451 6.02962 12.8237 5.82429 12.8237C5.61918 12.8237 5.42683 12.7441 5.2825 12.5997L0.22662 7.54386C0.0819555 7.39908 0.0023952 7.20581 0.00296453 7.00037C0.00250961 6.79424 0.0819554 6.60086 0.226734 6.45631Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_40_294">
+                          <rect
+                            width="14"
+                            height="14"
+                            fill="white"
+                            transform="matrix(-1 8.74234e-08 8.74222e-08 1 14.0029 0)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="workers__swiper-btn swiper-btn swiper-btn--next"
+                  >
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_40_294)">
+                        <path
+                          class="arrow"
+                          d="M0.226734 6.45631L5.28262 1.4003C5.42694 1.25598 5.61929 1.17676 5.8244 1.17676C6.02973 1.17676 6.22197 1.25609 6.36629 1.4003L6.82533 1.85945C6.96954 2.00355 7.04899 2.19602 7.04899 2.40124C7.04899 2.60634 6.96954 2.8053 6.82533 2.94939L3.8758 5.90541L13.2466 5.90541C13.6691 5.90541 14.0029 6.23618 14.0029 6.65879L14.0029 7.30791C14.0029 7.73052 13.6691 8.09463 13.2466 8.09463L3.84234 8.09463L6.82522 11.0672C6.96943 11.2115 7.04887 11.3987 7.04887 11.6039C7.04887 11.8089 6.96943 11.9989 6.82522 12.1431L6.36618 12.6008C6.22186 12.7451 6.02962 12.8237 5.82429 12.8237C5.61918 12.8237 5.42683 12.7441 5.2825 12.5997L0.22662 7.54386C0.0819555 7.39908 0.0023952 7.20581 0.00296453 7.00037C0.00250961 6.79424 0.0819554 6.60086 0.226734 6.45631Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_40_294">
+                          <rect
+                            width="14"
+                            height="14"
+                            fill="white"
+                            transform="matrix(-1 8.74234e-08 8.74222e-08 1 14.0029 0)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="workers__swiper-wrapper swiper-wrapper">
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/1.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Юлиана Петрова</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/2.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Альберт Ердвандон</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/3.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Григорий Калуцкий</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/4.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Анджелика Комора</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/1.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Юлиана Петрова</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/2.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Альберт Ердвандон</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/3.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Григорий Калуцкий</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                  <li class="workers__swiper-slide swiper-slide">
+                    <div class="worker-card workers__worker-card">
+                      <img
+                        src="./media/images/workers/4.png"
+                        alt="worker 1"
+                        width="220"
+                        height="220"
+                        class="worker-card__img"
+                      />
+                      <h3 class="worker-card__name">Анджелика Комора</h3>
+                      <p class="worker-card__text">Преподаватель физики</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="workers__swiper-pagination swiper-pagination"></div>
+              </div>
+              <button class="workers__btn btn">Оформить заявку</button>
+            </div>
+          </div>
+        </section>
+        <section class="join-us">
+          <picture>
+            <source
+              srcset="./media/images/bg-inst-m.svg"
+              media="(max-width: 426px)"
+            />
+
+            <img
+              src="./media/images/join-us__bg.svg"
+              alt="join us backgorund"
+              loading="lazy"
+              width="1920"
+              height="586"
+              class="join-us__bg"
+            />
+          </picture>
+          <div class="container">
+            <div class="join-us__inner">
+              <div class="join-us__text-box">
+                <h2
+                  class="join-us__section-heading section-heading section-heading--decor-left"
+                >
+                  Присоединяйтесь к самому студенческому сообществу в
+                  <span class="instagram-gradient-text">Instagram</span>
+                </h2>
+                <p class="join-us__text">
+                  Полезная информация, юмор, зарядка для ума, розыгрыши призов и
+                  многое другое, что нельзя пропустить :)
+                </p>
+                <button class="btn join-us__btn">Подписаться</button>
+              </div>
+              <div class="join-us__img-box">
+                <img
+                  src="./media/images/join-us.png"
+                  alt="join us"
+                  width="518"
+                  height="447"
+                  class="join-us__img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="last-in-blog">
+          <img
+            src="./media/images/last-in-blog__bg.svg"
+            alt="last in blog background"
+            width="1920"
+            height="676"
+            class="last-in-blog__bg"
+          />
+          <img
+            src="./media/images/last-in-blog__bg-mobile.svg"
+            alt="last in blog background"
+            width="320"
+            height="502"
+            class="last-in-blog__bg-mobile"
+          />
+          <div class="container">
+            <div class="last-in-blog__inner">
+              <h2
+                class="last-in-blog__section-heading section-heading section-heading--decor-right section-heading--decor-left"
+              >
+                Последнее в блоге
+              </h2>
+              <div class="last-in-blog__swiper swiper">
+                <ul class="last-in-blog__swiper-wrapper swiper-wrapper">
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="last-in-blog__swiper-slide swiper-slide">
+                    <div
+                      class="last-in-blog-card last-in-blog__last-in-blog-card"
+                    >
+                      <img
+                        src="./media/images/last-in-blog/1.jpg"
+                        alt="last in blog"
+                        width="370"
+                        height="283"
+                        class="last-in-blog-card__img"
+                      />
+                      <div class="last-in-blog-card__text-box">
+                        <h3 class="last-in-blog-card__heading">
+                          Очень длинное название статьи
+                        </h3>
+                        <p class="last-in-blog-card__text">
+                          Таким образом реализация намеченных плановых заданий
+                          требуют определения и уточнения новых предложений.
+                        </p>
+                        <div class="last-in-blog-card__footer">
+                          <time class="last-in-blog-card__date"
+                            >16.01.2020</time
+                          >
+                          <a href="#" class="last-in-blog-card__read-more"
+                            >Читать далее</a
+                          >
+                        </div>
+                      </div>
+                      <h3 class="last-in-blog-card__heading-inner">
+                        Очень длинное название статьи
+                      </h3>
+                    </div>
+                  </li>
+                </ul>
+                <div class="last-in-blog__btns">
+                  <button
+                    type="button"
+                    class="last-in-blog__swiper-btn swiper-btn swiper-btn--prev"
+                  >
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_40_294)">
+                        <path
+                          class="arrow"
+                          d="M0.226734 6.45631L5.28262 1.4003C5.42694 1.25598 5.61929 1.17676 5.8244 1.17676C6.02973 1.17676 6.22197 1.25609 6.36629 1.4003L6.82533 1.85945C6.96954 2.00355 7.04899 2.19602 7.04899 2.40124C7.04899 2.60634 6.96954 2.8053 6.82533 2.94939L3.8758 5.90541L13.2466 5.90541C13.6691 5.90541 14.0029 6.23618 14.0029 6.65879L14.0029 7.30791C14.0029 7.73052 13.6691 8.09463 13.2466 8.09463L3.84234 8.09463L6.82522 11.0672C6.96943 11.2115 7.04887 11.3987 7.04887 11.6039C7.04887 11.8089 6.96943 11.9989 6.82522 12.1431L6.36618 12.6008C6.22186 12.7451 6.02962 12.8237 5.82429 12.8237C5.61918 12.8237 5.42683 12.7441 5.2825 12.5997L0.22662 7.54386C0.0819555 7.39908 0.0023952 7.20581 0.00296453 7.00037C0.00250961 6.79424 0.0819554 6.60086 0.226734 6.45631Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_40_294">
+                          <rect
+                            width="14"
+                            height="14"
+                            fill="white"
+                            transform="matrix(-1 8.74234e-08 8.74222e-08 1 14.0029 0)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="last-in-blog__swiper-btn swiper-btn swiper-btn--next"
+                  >
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_40_294)">
+                        <path
+                          class="arrow"
+                          d="M0.226734 6.45631L5.28262 1.4003C5.42694 1.25598 5.61929 1.17676 5.8244 1.17676C6.02973 1.17676 6.22197 1.25609 6.36629 1.4003L6.82533 1.85945C6.96954 2.00355 7.04899 2.19602 7.04899 2.40124C7.04899 2.60634 6.96954 2.8053 6.82533 2.94939L3.8758 5.90541L13.2466 5.90541C13.6691 5.90541 14.0029 6.23618 14.0029 6.65879L14.0029 7.30791C14.0029 7.73052 13.6691 8.09463 13.2466 8.09463L3.84234 8.09463L6.82522 11.0672C6.96943 11.2115 7.04887 11.3987 7.04887 11.6039C7.04887 11.8089 6.96943 11.9989 6.82522 12.1431L6.36618 12.6008C6.22186 12.7451 6.02962 12.8237 5.82429 12.8237C5.61918 12.8237 5.42683 12.7441 5.2825 12.5997L0.22662 7.54386C0.0819555 7.39908 0.0023952 7.20581 0.00296453 7.00037C0.00250961 6.79424 0.0819554 6.60086 0.226734 6.45631Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_40_294">
+                          <rect
+                            width="14"
+                            height="14"
+                            fill="white"
+                            transform="matrix(-1 8.74234e-08 8.74222e-08 1 14.0029 0)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="last-in-blog__swiper-pagination swiper-pagination"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="seo-text">
+          <img
+            src="./media/images/seo-text__bg.svg"
+            alt="seo text background"
+            width="1920"
+            height="917"
+            class="seo-text__bg"
+          />
+          <div class="container">
+            <div class="seo-text__inner">
+              <h2
+                class="section-heading section-heading--decor-left seo-text__section-heading"
+              >
+                SEO-текст
+              </h2>
+              <div class="seo-text__content">
+                <h1>Заголовок 1</h1>
+                <p>
+                  Зачастую студентам не хватает времени на написание дипломных.
+                  Выходом является заказать дипломную. Наша миссия помочь вам
+                  освободить время для подготовки к более важным вещам!
+                </p>
+                <h2>Заголовок 2</h2>
+                <p>
+                  <b
+                    >Над вашей дипломной будут трудиться профессиональные
+                    авторы, преподаватели украинских ВУЗов с большим опытом.</b
+                  >
+                  Довериться профессионалам просто — достаточно
+                  зарегистрироваться на сайте и оформить заказ: укажите тему,
+                  требования ВУЗа и руководителя.
+                </p>
+                <h3>Заголовок 3</h3>
+                <p>
+                  Если у вас имеется план, финансовая отчетность или другие
+                  материалы вашего предприятия, методические рекомендации —
+                  обязательно их прикрепите. В описании напишите дополнительные
+                  пожелания.
+                </p>
+                <h4>Заголовок 4</h4>
+                <p>
+                  На выполнение нам потребуется до 30 дней. После согласования
+                  деталей осуществляется оплата наших услуг наличным или
+                  безналичным платежом. Заказать дипломную работу недорого
+                  возможно при условии большого срока, несложной темы. Мы также
+                  готовы взяться за оперативное выполнение заказа.
+                </p>
+                <h5>Заголовок 5</h5>
+                <p>
+                  На выполнение нам потребуется до 30 дней. После согласования
+                  деталей осуществляется оплата наших услуг наличным или
+                  безналичным платежом. Заказать дипломную работу недорого
+                  возможно при условии большого срока, несложной темы. Мы также
+                  готовы взяться за оперативное выполнение заказа.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="container">
+            <div class="footer__grid">
+              <div class="footer__grid-item">
+                <div class="logo footer__logo">
+                  <a href="#" class="logo__link"
+                    ><img
+                      src="./media/images/logo.svg"
+                      alt="logo"
+                      width="183"
+                      height="47"
+                      class="logo__img"
+                  /></a>
+                </div>
+                <div class="bank-cards footer__bank-cards">
+                  <div class="bank-cards__item">
+                    <img
+                      src="./media/images/icons/mastercard.svg"
+                      alt="mestercard"
+                      width="70"
+                      height="44"
+                      class="bank-cards__icon"
+                    />
+                  </div>
+                  <div class="bank-cards__item">
+                    <img
+                      src="./media/images/icons/visa.svg"
+                      alt="visa"
+                      width="70"
+                      height="44"
+                      class="bank-cards__icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="footer__grid-item">
+                <ul class="v-links-list footer__v-links-list">
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link"> Условия работы </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link">
+                      Наши преимущества
+                    </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link"> FAQ </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link"> ВУЗы </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link">
+                      Курсовая работа Алматы
+                    </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link">
+                      Дипломные работы в Похуй какой город
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__grid-item">
+                <ul class="v-links-list footer__v-links-list">
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link"> Партнерам </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link"> Авторам </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link"> Способы оплаты </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link">
+                      Публичная оферта
+                    </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link">
+                      Дипломные работы Алматы
+                    </a>
+                  </li>
+                  <li class="v-links-list__item">
+                    <a href="#" class="v-links-list__link">
+                      Дипломные работы похуй какой город
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__grid-item">
+                <p class="footer__text">
+                  Специалисты сайта Zachete.ru выполняют работу по сбору и
+                  структурированию информации по теме, указанной Клиентом.
+                </p>
+                <p class="footer__text">
+                  Полученная работа не является готовым научным трудом, но может
+                  быть использована в качестве источника для написания.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <div class="container">
+            <div class="footer__copy-inner">
+              <p class="footer__copy-text">
+                Пользуясь услугами данного сайта вы принимает нашу политику
+                конфиденциальности
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="">
+      <h2
+        class="section-heading section-heading--size-md section-heading--decor-right section-heading--decor-left"
+      >
+        Сделали ХХ работ
+      </h2>
+      <br />
+      <h2
+        class="section-heading section-heading--size-sm section-heading--decor-right section-heading--decor-left"
+      >
+        Сделали ХХ работ
+      </h2>
+      <br />
+      <h2 class="section-heading">Сделали ХХ работ</h2>
+      <br />
+      <h2 class="section-heading section-heading--decor-left">
+        Сделали ХХ работ
+      </h2>
+      <br />
+      <h2 class="section-heading section-heading--decor-right">
+        Сделали ХХ работ
+      </h2>
+      <br />
+      <h2
+        class="section-heading section-heading--decor-right section-heading--decor-left"
+      >
+        Сделали ХХ работ
+      </h2>
+      <h2 class="h1-heading">1</h2>
+      <h2 class="h2-heading">2</h2>
+      <h2 class="h3-heading">3</h2>
+      <h2 class="h4-heading">4</h2>
+      <h2 class="h5-heading">5</h2>
+
+      <button class="btn">Узнать стоимость своей работы</button>
+      <button class="btn btn--size-sm">Узнать стоимость</button>
+      <button class="btn btn--size-sm btn--style-outlined">вход</button>
+      <button class="btn btn--style-transparent">
+        Узнать стоимость своей работы
+      </button>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

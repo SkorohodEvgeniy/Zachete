@@ -1,0 +1,14 @@
+$txt: #252d34;
+$red: #eb5858;
+$green: #00ae9a;
+$blue: #85a6dc;
+$yellow: #ffe59d;
+$pink: #ffabab;
+
+@mixin d-flex($jContent: space-between, $aItems: center, $fWrap: wrap, $fDir: row) {
+    display: flex;
+    justify-content: $jContent;
+    align-items: $aItems;
+    flex-wrap: $fWrap;
+    flex-direction: $fDir;
+}
