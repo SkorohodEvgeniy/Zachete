@@ -3193,20 +3193,70 @@ header.header .header-contact button:first-of-type {
 .blog-page {
   display: grid;
   grid-template-columns: auto 270px;
+  padding-bottom: 121px;
+}
+@media (max-width: 768px) {
+  .blog-page {
+    padding-bottom: 40px;
+  }
 }
 .blog-page p {
   font-size: 16px;
   line-height: 28px;
-  margin-bottom: 2.65rem;
+  margin-bottom: 1.75rem;
   color: #48545E;
 }
+@media (max-width: 768px) {
+  .blog-page p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 .blog-page h3 {
-  font-size: 28px;
+  font-size: 27px;
   line-height: 38px;
   margin-bottom: 21px;
 }
+@media only screen and (max-width: 1024px) {
+  .blog-page h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+.blog-page .d-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.blog-page .intresting {
+  border-left: 4px solid #00AE9A;
+  padding-left: 18px;
+}
+.blog-page .intresting h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #00AE9A;
+  margin-bottom: 7px;
+}
+@media (max-width: 768px) {
+  .blog-page .intresting h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.blog-page .intresting p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (max-width: 768px) {
+  .blog-page .intresting p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 .blog-page ul li {
-  margin-bottom: 35px;
+  margin-bottom: 1rem;
   color: #48545E;
   position: relative;
   padding-left: 10px;
@@ -3221,6 +3271,14 @@ header.header .header-contact button:first-of-type {
   top: 9px;
   left: 0;
 }
+.blog-page ol li {
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+  padding-left: 12px;
+}
+.blog-page ol li::marker {
+  color: #00AE9A;
+}
 .blog-page__content .mb-54 {
   margin-bottom: 3.37rem;
 }
@@ -3233,10 +3291,6 @@ header.header .header-contact button:first-of-type {
     font-size: 24px;
     line-height: 33px;
   }
-}
-.blog-page__content .d-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 .blog-page .join-us__text-box {
   max-width: 27.85rem;
