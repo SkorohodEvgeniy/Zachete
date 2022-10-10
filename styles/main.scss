@@ -3061,7 +3061,7 @@ header {
 
   @include _768 {
     padding-bottom: 40px;
-
+    grid-template-columns: 1fr;
   }
 
   p {
@@ -3090,6 +3090,10 @@ header {
   .d-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @include _768 {
+      grid-template-columns: 1fr;
+    }
   }
 
   .intresting {
@@ -3107,6 +3111,7 @@ header {
         font-size: 20px;
         line-height: 28px;
       }
+
     }
 
     p {
@@ -3143,6 +3148,7 @@ header {
   }
 
   ol {
+    padding-left: 1rem;
 
     li {
       list-style-type: decimal;
@@ -3187,6 +3193,30 @@ header {
         &:before {
           top: 18px;
         }
+      }
+    }
+  }
+}
+
+/*Aside*/
+aside {
+  .calculator {
+    padding: 0;
+
+    &__content {
+      padding: 15px;
+
+      .calculator-form {
+        display: block;
+
+        .d-grid {
+          display: block;
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &::after {
+        content: none;
       }
     }
   }
