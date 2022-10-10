@@ -3327,6 +3327,24 @@ aside .calculator__content .calculator-form .d-grid {
   display: block;
   grid-template-columns: 1fr;
 }
+aside .calculator__content .calculator-form .total-box {
+  padding: 13px;
+  margin-bottom: 21px;
+}
+aside .calculator__content .calculator-form .total-box .text {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+aside .calculator__content .calculator-form .total-box .text img {
+  width: 30px;
+}
+aside .calculator__content .calculator-form .total-box .text p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin-left: 6px;
+}
 aside .calculator__content::after {
   content: none;
 }

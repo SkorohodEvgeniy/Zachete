@@ -290,3 +290,7 @@ let twHead = () => {
 if (document.documentElement.clientWidth < 712) {
   twHead();
 }
+
+$(document).ready(function () {
+  $("#total-box").insertBefore("#calculator-form");
+});
