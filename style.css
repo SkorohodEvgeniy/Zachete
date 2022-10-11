@@ -3201,14 +3201,14 @@ header.header .header-contact button:first-of-type {
     grid-template-columns: 1fr;
   }
 }
-.blog-page p {
+.blog-page p:not(.aside) {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 1.75rem;
   color: #48545E;
 }
 @media (max-width: 768px) {
-  .blog-page p {
+  .blog-page p:not(.aside) {
     font-size: 14px;
     line-height: 24px;
   }
@@ -3317,36 +3317,51 @@ header.header .header-contact button:first-of-type {
 aside .calculator {
   padding: 0;
 }
-aside .calculator__content {
+aside .calculator .container {
+  padding: 0;
+}
+aside .calculator .container .calculator__content {
   padding: 15px;
 }
-aside .calculator__content .calculator-form {
+aside .calculator .container .calculator__content .calculator-form {
   display: block;
 }
-aside .calculator__content .calculator-form .d-grid {
+aside .calculator .container .calculator__content .calculator-form .d-grid {
   display: block;
   grid-template-columns: 1fr;
 }
-aside .calculator__content .calculator-form .total-box {
+aside .calculator .container .calculator__content .calculator-form .total-box {
   padding: 13px;
   margin-bottom: 21px;
 }
-aside .calculator__content .calculator-form .total-box .text {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-aside .calculator__content .calculator-form .total-box .text img {
+aside .calculator .container .calculator__content .calculator-form .total-box .text img {
   width: 30px;
 }
-aside .calculator__content .calculator-form .total-box .text p {
+aside .calculator .container .calculator__content .calculator-form .total-box .text p {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 0;
-  margin-left: 6px;
 }
-aside .calculator__content::after {
+aside .calculator .container .calculator__content .calculator-form .total .time,
+aside .calculator .container .calculator__content .calculator-form .total .sale {
+  margin-bottom: 14px;
+}
+aside .calculator .container .calculator__content .calculator-form .total .time p,
+aside .calculator .container .calculator__content .calculator-form .total .sale p {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 0;
+}
+aside .calculator .container .calculator__content::after {
   content: none;
+}
+aside .calculator .container .calculator__content .btn {
+  padding: 19px 28px;
+  width: 100%;
+}
+aside .calculator .container .calculator__content .private-policy {
+  font-size: 10px;
+  line-height: 14px;
 }
 
 @media (min-width: 1240px) {
