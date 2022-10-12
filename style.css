@@ -124,7 +124,7 @@ main.main {
 
 .instagram-gradient-text {
   background: linear-gradient(220.12deg, #833ab4 20.31%, #9c3495 26.17%, #dc2546 38.91%, #fd1d1d 45.23%, #fc6831 55.84%, #fc9b40 64.09%, #fcaf45 68.12%, #fdb750 69.93%, #fecb6a 75.33%, #ffd87a 80.16%, #ffdc80 83.88%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -348,6 +348,29 @@ main.main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer-menu-left a {
+  color: #98e3db;
+  font-size: 0.875rem;
+  line-height: 2.14;
+  display: inline-block;
+  width: 100%;
+  padding-left: 0.8125rem;
+  position: relative;
+}
+.footer-menu-left a::before {
+  content: "";
+  position: absolute;
+  top: 0.875rem;
+  left: 0;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+.footer-menu-left a:hover {
+  color: #fff;
 }
 
 .v-links-list__link {
@@ -2830,6 +2853,8 @@ main.main {
 .calculator__content .calculator-form .i-range input[type=range].styled-slider {
   height: 4px;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   max-width: 485px;
   width: 100%;
@@ -2842,6 +2867,7 @@ main.main {
 }
 .calculator__content .calculator-form .i-range input[type=range].styled-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+          appearance: none;
   width: 2em;
   height: 2em;
   border-radius: 5em;

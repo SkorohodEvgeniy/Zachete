@@ -266,6 +266,33 @@ main {
 
 }
 
+.footer-menu-left {
+  a {
+    color: #98e3db;
+    font-size: 0.875rem;
+    line-height: 2.14;
+    display: inline-block;
+    width: 100%;
+    padding-left: 0.8125rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.875rem;
+      left: 0;
+      width: 0.25rem;
+      height: 0.25rem;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
 .v-links-list {
 
   &__link {
